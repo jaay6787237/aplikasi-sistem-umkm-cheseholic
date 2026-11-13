@@ -1,0 +1,168 @@
+{
+  "entities": {
+    "DirectOrder": {
+      "title": "DirectOrder",
+      "description": "Pesanan langsung pelanggan untuk cabang Cheeseholic tertentu",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "ID pesanan berawalan CH-",
+          "maxLength": 64
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Waktu pembuatan pesanan",
+          "maxLength": 64
+        },
+        "outletId": {
+          "type": "string",
+          "description": "ID outlet cabang tujuan (misal: kedaton, pahoman, sukarame, korpri, navara)",
+          "maxLength": 64
+        },
+        "outletName": {
+          "type": "string",
+          "description": "Nama outlet cabang",
+          "maxLength": 100
+        },
+        "customerName": {
+          "type": "string",
+          "description": "Nama lengkap pemesan",
+          "maxLength": 120
+        },
+        "customerPhone": {
+          "type": "string",
+          "description": "Nomor kontak WhatsApp pemesan",
+          "maxLength": 30
+        },
+        "deliveryMode": {
+          "type": "string",
+          "description": "Mode pengantaran",
+          "enum": ["delivery", "takeaway"]
+        },
+        "address": {
+          "type": "string",
+          "description": "Alamat pengiriman pemesan jika delivery",
+          "maxLength": 300
+        },
+        "notes": {
+          "type": "string",
+          "description": "Catatan tambahan pesanan",
+          "maxLength": 300
+        },
+        "paymentMethod": {
+          "type": "string",
+          "description": "Metode pembayaran",
+          "enum": ["QRIS", "BCA", "TUNAI"]
+        },
+        "paymentStatus": {
+          "type": "string",
+          "description": "Status pelunasan",
+          "enum": ["Lunas", "Menunggu Verifikasi"]
+        },
+        "totalQty": {
+          "type": "number",
+          "description": "Total box yang dipesan"
+        },
+        "totalPrice": {
+          "type": "number",
+          "description": "Total tagihan dalam Rupiah"
+        },
+        "status": {
+          "type": "string",
+          "description": "Status pemrosesan pesanan",
+          "enum": ["Baru", "Diproses", "Siap", "Selesai", "Batal"]
+        },
+        "readByOutlet": {
+          "type": "boolean",
+          "description": "Penanda apakah staf outlet telah membaca pesanan"
+        }
+      },
+      "required": ["id", "outletId", "customerName", "deliveryMode", "totalQty", "totalPrice", "status"]
+    },
+    "OutletInventoryDoc": {
+      "title": "OutletInventoryDoc",
+      "description": "Dokumen inventaris stok per cabang outlet",
+      "type": "object",
+      "properties": {
+        "outletId": {
+          "type": "string",
+          "description": "ID cabang outlet",
+          "maxLength": 64
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Waktu pembaruan stok",
+          "maxLength": 64
+        }
+      },
+      "required": ["outletId"]
+    },
+    "DispatchLog": {
+      "title": "DispatchLog",
+      "description": "Catatan pengiriman pasokan stok dari Dapur Produksi ke Cabang",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "ID unik log dispatch",
+          "maxLength": 64
+        },
+        "outletId": {
+          "type": "string",
+          "description": "ID cabang tujuan",
+          "maxLength": 64
+        },
+        "productId": {
+          "type": "string",
+          "description": "ID varian cheesecake yang dikirim",
+          "maxLength": 64
+        },
+        "quantity": {
+          "type": "number",
+          "description": "Jumlah box yang dikirimkan"
+        },
+        "courierType": {
+          "type": "string",
+          "description": "Jenis kurir pengantar",
+          "enum": ["internal", "external"]
+        },
+        "courierName": {
+          "type": "string",
+          "description": "Nama pengantar",
+          "maxLength": 100
+        },
+        "courierPhone": {
+          "type": "string",
+          "description": "Kontak kurir",
+          "maxLength": 30
+        },
+        "status": {
+          "type": "string",
+          "description": "Status pengiriman kurir",
+          "enum": ["Disiapkan", "Dalam Perjalanan", "Selesai & Diterima"]
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Waktu keberangkatan",
+          "maxLength": 64
+        }
+      },
+      "required": ["id", "outletId", "productId", "quantity", "courierType", "status"]
+    }
+  },
+  "firestore": {
+    "/orders/{orderId}": {
+      "schema": "DirectOrder",
+      "description": "Koleksi seluruh pesanan pelanggan langsung"
+    },
+    "/inventory/{outletId}": {
+      "schema": "OutletInventoryDoc",
+      "description": "Koleksi data inventaris stok per cabang"
+    },
+    "/dispatchLogs/{logId}": {
+      "schema": "DispatchLog",
+      "description": "Koleksi pengiriman kurir dan pasokan stok dari dapur produksi"
+    }
+  }
+}

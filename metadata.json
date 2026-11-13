@@ -1,0 +1,6 @@
+{
+  "name": "Cheeseholic - Direct Online Ordering & Outlet Terminal",
+  "description": "Sistem pemesanan online direct tanpa WA, notifikasi bel realtime kasir cabang, portal pusat produksi dapur, dan logistik kurir Cheeseholic Bandar Lampung.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

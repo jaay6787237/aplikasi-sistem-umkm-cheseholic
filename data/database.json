@@ -1,0 +1,577 @@
+{
+  "orders": [
+    {
+      "id": "CH-1707",
+      "createdAt": "Hari ini (16:00 WIB)",
+      "outletId": "kedaton",
+      "outletName": "Outlet Kedaton",
+      "customerName": "Ahmad Fauzi",
+      "customerPhone": "0812-1122-3344",
+      "deliveryMode": "delivery",
+      "address": "Jl. ZA Pagar Alam No. 10, Rajabasa",
+      "paymentMethod": "QRIS",
+      "paymentStatus": "Lunas",
+      "items": [
+        {
+          "productId": "lotus-biscoff",
+          "productName": "Lotus Biscoff",
+          "qty": 2,
+          "price": 25000,
+          "subtotal": 50000,
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRG3112EulcGHqclsC_J_bZOSIAZiBP2pfPliIi2R9ZOddlVU1j-9BbqEUb46IwRite1_4fgT1Ei_TXwkmhHYKlAD_yqC-Qq3Dwx945b_JDsCrJd-uwHs5CHh4J5Ai11J8YhlXrzyWQSx-nrrMnBkAxjld9IilwrR4xJ94ozO3N6X4bdRKEwkuE4M8UuqSoVoOPBw9IJUqZWykS3tSBdJMzAo-3NfL8yaV4bfV4fdg"
+        },
+        {
+          "productId": "choco-cheese",
+          "productName": "Choco Cheese",
+          "qty": 1,
+          "price": 25000,
+          "subtotal": 25000,
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB9FsSQ3LGQTktBmGhp8tUVbKFAu2D7odd0BVzUNJ4dsFpzeDOZepGpnotdq1IIdZ3cLPaLFdYNtokuVd7xeH3oEDcmm8VPwfZUVcVNgKJv6XV06RgOayepFBcbj5EI5YsLruBrNUSrHRNxFwELHGkQj2FQ_TPGD-Z7-5A2DJf5s6fLh67yf0YOyhpw5kmXzn84mSne0FRRilCieJ2_xhxEPQMdiVgVxVrfSOoxdHIw"
+        }
+      ],
+      "totalQty": 3,
+      "totalPrice": 75000,
+      "status": "Baru",
+      "readByOutlet": false
+    },
+    {
+      "id": "CH-4733",
+      "createdAt": "Hari ini (15:58 WIB)",
+      "outletId": "kedaton",
+      "outletName": "Outlet Kedaton",
+      "customerName": "Dimas Pratama",
+      "customerPhone": "0812-7788-9900",
+      "deliveryMode": "delivery",
+      "address": "Jl. Teuku Umar No. 45, Kedaton",
+      "paymentMethod": "QRIS",
+      "paymentStatus": "Lunas",
+      "items": [
+        {
+          "productId": "lotus-biscoff",
+          "productName": "Lotus Biscoff",
+          "qty": 2,
+          "price": 25000,
+          "subtotal": 50000,
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRG3112EulcGHqclsC_J_bZOSIAZiBP2pfPliIi2R9ZOddlVU1j-9BbqEUb46IwRite1_4fgT1Ei_TXwkmhHYKlAD_yqC-Qq3Dwx945b_JDsCrJd-uwHs5CHh4J5Ai11J8YhlXrzyWQSx-nrrMnBkAxjld9IilwrR4xJ94ozO3N6X4bdRKEwkuE4M8UuqSoVoOPBw9IJUqZWykS3tSBdJMzAo-3NfL8yaV4bfV4fdg"
+        },
+        {
+          "productId": "choco-cheese",
+          "productName": "Choco Cheese",
+          "qty": 1,
+          "price": 25000,
+          "subtotal": 25000,
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB9FsSQ3LGQTktBmGhp8tUVbKFAu2D7odd0BVzUNJ4dsFpzeDOZepGpnotdq1IIdZ3cLPaLFdYNtokuVd7xeH3oEDcmm8VPwfZUVcVNgKJv6XV06RgOayepFBcbj5EI5YsLruBrNUSrHRNxFwELHGkQj2FQ_TPGD-Z7-5A2DJf5s6fLh67yf0YOyhpw5kmXzn84mSne0FRRilCieJ2_xhxEPQMdiVgVxVrfSOoxdHIw"
+        }
+      ],
+      "totalQty": 3,
+      "totalPrice": 75000,
+      "status": "Baru",
+      "readByOutlet": false
+    },
+    {
+      "id": "CH-8921",
+      "createdAt": "Baru saja (14:32 WIB)",
+      "outletId": "kedaton",
+      "outletName": "Outlet Kedaton",
+      "customerName": "Anisa Rahma",
+      "customerPhone": "0812-7890-4321",
+      "deliveryMode": "delivery",
+      "address": "Jl. ZA. Pagar Alam No. 12 (Samping Eiger), Kedaton",
+      "notes": "Mohon cantumkan lilin ulang tahun 1 biji ya min",
+      "paymentMethod": "QRIS",
+      "paymentStatus": "Lunas",
+      "items": [
+        {
+          "productId": "lotus-biscoff",
+          "productName": "Lotus Biscoff",
+          "qty": 2,
+          "price": 25000,
+          "subtotal": 50000
+        },
+        {
+          "productId": "choco-cheese",
+          "productName": "Choco Cheese",
+          "qty": 1,
+          "price": 25000,
+          "subtotal": 25000
+        }
+      ],
+      "totalQty": 3,
+      "totalPrice": 75000,
+      "status": "Baru",
+      "readByOutlet": false
+    },
+    {
+      "id": "CH-8919",
+      "createdAt": "15 Menit lalu (14:17 WIB)",
+      "outletId": "pahoman",
+      "outletName": "Outlet Pahoman",
+      "customerName": "Dimas Prasetyo",
+      "customerPhone": "0853-1122-3344",
+      "deliveryMode": "takeaway",
+      "notes": "Diambil jam 16.00 WIB pas pulang kantor",
+      "paymentMethod": "Transfer BCA",
+      "paymentStatus": "Lunas",
+      "items": [
+        {
+          "productId": "dark-choco",
+          "productName": "Dark Choco",
+          "qty": 1,
+          "price": 25000,
+          "subtotal": 25000
+        },
+        {
+          "productId": "strawberry-cheese",
+          "productName": "Strawberry Cheese",
+          "qty": 1,
+          "price": 25000,
+          "subtotal": 25000
+        }
+      ],
+      "totalQty": 2,
+      "totalPrice": 50000,
+      "status": "Diproses",
+      "readByOutlet": true
+    },
+    {
+      "id": "CH-8915",
+      "createdAt": "35 Menit lalu (13:57 WIB)",
+      "outletId": "uin",
+      "outletName": "Outlet UIN Sukarame",
+      "customerName": "Siti Mahasiswa UIN",
+      "customerPhone": "0896-9876-5432",
+      "deliveryMode": "takeaway",
+      "notes": "Titip di kasir ya mba",
+      "paymentMethod": "Tunai di Outlet",
+      "paymentStatus": "Bayar di Tempat",
+      "items": [
+        {
+          "productId": "matcha-greentea",
+          "productName": "Matcha Greentea",
+          "qty": 1,
+          "price": 25000,
+          "subtotal": 25000
+        }
+      ],
+      "totalQty": 1,
+      "totalPrice": 25000,
+      "status": "Siap",
+      "readByOutlet": true
+    }
+  ],
+  "inventory": {
+    "kedaton": {
+      "lotus-biscoff": {
+        "productId": "lotus-biscoff",
+        "stock": 21,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "dark-choco": {
+        "productId": "dark-choco",
+        "stock": 18,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "choco-cheese": {
+        "productId": "choco-cheese",
+        "stock": 10,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "choco-crunchy": {
+        "productId": "choco-crunchy",
+        "stock": 2,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "strawberry-cheese": {
+        "productId": "strawberry-cheese",
+        "stock": 14,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "strawberry-sweet": {
+        "productId": "strawberry-sweet",
+        "stock": 16,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "cheese-lover": {
+        "productId": "cheese-lover",
+        "stock": 22,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "caramel-dulce": {
+        "productId": "caramel-dulce",
+        "stock": 15,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "classic-tiramisu": {
+        "productId": "classic-tiramisu",
+        "stock": 4,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "tiramisu-glaze": {
+        "productId": "tiramisu-glaze",
+        "stock": 10,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "oreo": {
+        "productId": "oreo",
+        "stock": 19,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "matcha-greentea": {
+        "productId": "matcha-greentea",
+        "stock": 2,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      }
+    },
+    "pahoman": {
+      "lotus-biscoff": {
+        "productId": "lotus-biscoff",
+        "stock": 2,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "dark-choco": {
+        "productId": "dark-choco",
+        "stock": 8,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "choco-cheese": {
+        "productId": "choco-cheese",
+        "stock": 6,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "choco-crunchy": {
+        "productId": "choco-crunchy",
+        "stock": 0,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "strawberry-cheese": {
+        "productId": "strawberry-cheese",
+        "stock": 10,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "strawberry-sweet": {
+        "productId": "strawberry-sweet",
+        "stock": 12,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "cheese-lover": {
+        "productId": "cheese-lover",
+        "stock": 14,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "caramel-dulce": {
+        "productId": "caramel-dulce",
+        "stock": 9,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "classic-tiramisu": {
+        "productId": "classic-tiramisu",
+        "stock": 1,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "tiramisu-glaze": {
+        "productId": "tiramisu-glaze",
+        "stock": 7,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "oreo": {
+        "productId": "oreo",
+        "stock": 15,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "matcha-greentea": {
+        "productId": "matcha-greentea",
+        "stock": 0,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      }
+    },
+    "uin-sukarame": {
+      "lotus-biscoff": {
+        "productId": "lotus-biscoff",
+        "stock": 10,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "dark-choco": {
+        "productId": "dark-choco",
+        "stock": 14,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "choco-cheese": {
+        "productId": "choco-cheese",
+        "stock": 15,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "choco-crunchy": {
+        "productId": "choco-crunchy",
+        "stock": 4,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "strawberry-cheese": {
+        "productId": "strawberry-cheese",
+        "stock": 18,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "strawberry-sweet": {
+        "productId": "strawberry-sweet",
+        "stock": 11,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "cheese-lover": {
+        "productId": "cheese-lover",
+        "stock": 20,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "caramel-dulce": {
+        "productId": "caramel-dulce",
+        "stock": 13,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "classic-tiramisu": {
+        "productId": "classic-tiramisu",
+        "stock": 5,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "tiramisu-glaze": {
+        "productId": "tiramisu-glaze",
+        "stock": 9,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "oreo": {
+        "productId": "oreo",
+        "stock": 16,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "matcha-greentea": {
+        "productId": "matcha-greentea",
+        "stock": 3,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      }
+    },
+    "korpri": {
+      "lotus-biscoff": {
+        "productId": "lotus-biscoff",
+        "stock": 1,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "dark-choco": {
+        "productId": "dark-choco",
+        "stock": 7,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "choco-cheese": {
+        "productId": "choco-cheese",
+        "stock": 4,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "choco-crunchy": {
+        "productId": "choco-crunchy",
+        "stock": 1,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "strawberry-cheese": {
+        "productId": "strawberry-cheese",
+        "stock": 8,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "strawberry-sweet": {
+        "productId": "strawberry-sweet",
+        "stock": 9,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "cheese-lover": {
+        "productId": "cheese-lover",
+        "stock": 11,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "caramel-dulce": {
+        "productId": "caramel-dulce",
+        "stock": 6,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "classic-tiramisu": {
+        "productId": "classic-tiramisu",
+        "stock": 0,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "tiramisu-glaze": {
+        "productId": "tiramisu-glaze",
+        "stock": 5,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "oreo": {
+        "productId": "oreo",
+        "stock": 10,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      },
+      "matcha-greentea": {
+        "productId": "matcha-greentea",
+        "stock": 0,
+        "minAlertThreshold": 5,
+        "maxCapacity": 25
+      }
+    },
+    "navara": {
+      "lotus-biscoff": {
+        "productId": "lotus-biscoff",
+        "stock": 12,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "dark-choco": {
+        "productId": "dark-choco",
+        "stock": 20,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "choco-cheese": {
+        "productId": "choco-cheese",
+        "stock": 16,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "choco-crunchy": {
+        "productId": "choco-crunchy",
+        "stock": 8,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "strawberry-cheese": {
+        "productId": "strawberry-cheese",
+        "stock": 15,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "strawberry-sweet": {
+        "productId": "strawberry-sweet",
+        "stock": 17,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "cheese-lover": {
+        "productId": "cheese-lover",
+        "stock": 24,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "caramel-dulce": {
+        "productId": "caramel-dulce",
+        "stock": 18,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "classic-tiramisu": {
+        "productId": "classic-tiramisu",
+        "stock": 7,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "tiramisu-glaze": {
+        "productId": "tiramisu-glaze",
+        "stock": 14,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "oreo": {
+        "productId": "oreo",
+        "stock": 21,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      },
+      "matcha-greentea": {
+        "productId": "matcha-greentea",
+        "stock": 6,
+        "minAlertThreshold": 5,
+        "maxCapacity": 30
+      }
+    }
+  },
+  "dispatchLogs": [
+    {
+      "id": "TRX-101",
+      "timestamp": "2026-11-12 09:30",
+      "productName": "Lotus Biscoff",
+      "quantity": 20,
+      "fromOutletOrKitchen": "Dapur Utama Central Kedaton",
+      "targetOutletId": "kedaton",
+      "targetOutletName": "Outlet Kedaton",
+      "courierName": "Kurir Supri (Internal Armada 01)",
+      "courierPhone": "0812-9876-1100",
+      "status": "Selesai & Diterima",
+      "notes": "Kirim batch pagi freshly baked"
+    },
+    {
+      "id": "TRX-102",
+      "timestamp": "2026-11-12 11:15",
+      "productName": "Choco Crunchy",
+      "quantity": 15,
+      "fromOutletOrKitchen": "Dapur Utama Central Kedaton",
+      "targetOutletId": "pahoman",
+      "targetOutletName": "Outlet Pahoman",
+      "courierName": "Kurir Andi (Internal Armada 02)",
+      "courierPhone": "0813-4455-6677",
+      "status": "Dalam Perjalanan",
+      "notes": "Restok darurat varian habiss"
+    },
+    {
+      "id": "TRX-103",
+      "timestamp": "2026-11-12 14:00",
+      "productName": "Matcha Greentea",
+      "quantity": 15,
+      "fromOutletOrKitchen": "Dapur Utama Central Kedaton",
+      "targetOutletId": "korpri",
+      "targetOutletName": "Outlet Korpri",
+      "courierName": "Kurir Supri (Internal Armada 01)",
+      "courierPhone": "0812-9876-1100",
+      "status": "Disiapkan",
+      "notes": "Sedang dikemas dalam thermal box"
+    }
+  ],
+  "lastUpdated": "2026-11-12T16:00:15.668Z",
+  "version": 22
+}

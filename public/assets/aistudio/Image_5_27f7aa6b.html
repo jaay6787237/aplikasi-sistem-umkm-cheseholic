@@ -1,0 +1,799 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&amp;family=Space+Grotesk:wght@700&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "outline": "#81765f", "surface-container": "#ffe9e3", "primary-container": "#ffc700", "tertiary": "#964900", "inverse-primary": "#f5bf00", "on-tertiary-container": "#8c4400", "on-tertiary-fixed": "#311300", "on-secondary-container": "#784021", "tertiary-fixed-dim": "#ffb786", "on-secondary": "#ffffff", "primary-fixed-dim": "#f5bf00", "surface-container-low": "#fff1ed", "on-surface": "#311309", "surface": "#fff8f6", "on-secondary-fixed": "#341100", "on-background": "#311309", "surface-dim": "#ffd0c1", "tertiary-container": "#ffc29a", "surface-container-lowest": "#ffffff", "primary": "#765b00", "secondary-fixed": "#ffdbcb", "on-error-container": "#93000a", "surface-bright": "#fff8f6", "outline-variant": "#d2c5ab", "secondary-fixed-dim": "#ffb692", "inverse-surface": "#4a271c", "on-primary-fixed": "#251a00", "on-primary": "#ffffff", "surface-tint": "#765b00", "error-container": "#ffdad6", "secondary-container": "#fdaf88", "surface-container-highest": "#ffdbd0", "error": "#ba1a1a", "tertiary-fixed": "#ffdcc6", "primary-fixed": "#ffdf94", "surface-container-high": "#ffe2da", "inverse-on-surface": "#ffede8", "on-primary-fixed-variant": "#594400", "on-primary-container": "#6e5400", "surface-variant": "#ffdbd0", "on-secondary-fixed-variant": "#6e381a", "background": "#fff8f6", "on-tertiary-fixed-variant": "#723600", "secondary": "#8b4f2f", "on-tertiary": "#ffffff", "on-surface-variant": "#4f4632" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-sm": "0.5rem", "margin-lg": "3rem", "gutter": "1rem", "space-xs": "0.25rem", "gutter-md": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem", "margin-md": "2rem", "margin": "1rem" }, "fontFamily": { "label-price": ["Space Grotesk"], "body-sm": ["Plus Jakarta Sans"], "display-hero": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Space Grotesk"], "label-button": ["Plus Jakarta Sans"], "label-badge": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "display-hero-mobile": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"] }, "fontSize": { "label-price": ["18px", {"lineHeight": "22px", "fontWeight": "700"}], "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}], "display-hero": ["48px", {"lineHeight": "54px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "headline-lg": ["30px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-md": ["22px", {"lineHeight": "28px", "fontWeight": "700"}], "label-button": ["15px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700"}], "label-badge": ["13px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}], "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "700"}], "display-hero-mobile": ["32px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "500"}] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-primary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-on-surface flex items-center justify-center text-primary-container shadow-[0_4px_12px_-2px_rgba(91,43,12,0.08)]"><span class="material-symbols-outlined text-2xl">cake</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface leading-none">CHEESEHOLIC</span><span class="font-label-badge text-[10px] tracking-wider uppercase text-on-surface/80">FRESH AND DELICIOUS</span></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center bg-[#60237C] text-white px-2 py-1 rounded-full text-[10px] font-bold tracking-tight shadow-sm"><span class="material-symbols-outlined text-xs mr-0.5">verified</span>HALAL</div><a class="relative w-11 h-11 rounded-full bg-surface-container-lowest/90 flex items-center justify-center text-on-surface shadow-[0_4px_12px_-2px_rgba(91,43,12,0.08)]" data-path="cart" href="#"><span class="material-symbols-outlined text-xl">shopping_bag</span><span class="absolute -top-1 -right-1 bg-tertiary text-on-tertiary font-label-badge text-body-sm px-1.5 py-0.5 rounded-full min-w-[20px] text-center leading-none">3</span></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full px-gutter pb-8 space-y-space-lg">
+<!-- Top Intro Card -->
+<div class="rounded-2xl p-space-md shadow-sm relative overflow-hidden bg-primary-container text-on-surface">
+<div class="relative z-10 flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-[#25D366] text-white shadow-sm">
+<span class="material-symbols-outlined text-sm">chat</span>
+          WA Instant Order
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-badge text-body-sm bg-[#60237C] text-white">
+<span class="material-symbols-outlined text-xs">verified</span>
+          ID18110036353041225
+        </span>
+</div>
+<div class="pt-1">
+<h1 class="font-headline-md text-headline-md tracking-tight text-on-surface leading-tight">
+          Format Pesan Otomatis WhatsApp
+        </h1>
+<p class="font-body-sm text-body-sm text-on-surface/85 mt-1 leading-snug">
+          Pilih menu favorit, tentukan cabang terdekat, dan kirim format order langsung ke admin via WhatsApp tanpa ribet!
+        </p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<div class="px-3 py-1.5 rounded-xl bg-on-surface text-primary-container font-label-price text-body-md shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">savings</span>
+          Semua Varian Box Bar: IDR 25K
+        </div>
+</div>
+</div>
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-white/20 pointer-events-none"></div>
+</div>
+<!-- STEP 1: Pilih Cabang & Metode -->
+<section class="flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-badge text-body-sm">1</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Pilih Cabang Cheeseholic</h2>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Bandar Lampung</span>
+</div>
+<!-- Outlet Selection Cards -->
+<div class="grid grid-cols-1 gap-2.5" id="outlet-selector-group">
+<!-- Outlet 1 -->
+<label class="outlet-card flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all active:scale-[0.99] relative">
+<input checked="" class="hidden peer" name="outlet" type="radio" value="Outlet Kedaton (08.00 - 22.00)">
+<div class="peer-checked:bg-secondary peer-checked:text-on-secondary w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-badge text-body-sm mt-0.5 shrink-0 transition-colors">
+          1
+        </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-lg text-on-surface peer-checked:text-secondary">Outlet Kedaton</span>
+<span class="px-2 py-0.5 rounded-md bg-primary-container text-on-surface text-[11px] font-bold">08.00 - 22.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5 truncate">
+<span class="material-symbols-outlined text-sm text-secondary shrink-0">location_on</span>
+            Seberang Eiger / Bebek H. Slamet, Jl. ZA. Pagar Alam
+          </p>
+</div>
+<div class="peer-checked:flex hidden absolute top-3.5 right-3 text-secondary">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</div>
+</label>
+<!-- Outlet 2 -->
+<label class="outlet-card flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all active:scale-[0.99] relative">
+<input class="hidden peer" name="outlet" type="radio" value="Outlet Pahoman (11.00 - 19.00)">
+<div class="peer-checked:bg-secondary peer-checked:text-on-secondary w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-badge text-body-sm mt-0.5 shrink-0 transition-colors">
+          2
+        </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-lg text-on-surface peer-checked:text-secondary">Outlet Pahoman</span>
+<span class="px-2 py-0.5 rounded-md bg-primary-container text-on-surface text-[11px] font-bold">11.00 - 19.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5 truncate">
+<span class="material-symbols-outlined text-sm text-secondary shrink-0">location_on</span>
+            Depan Kolam Renang / Stadion Pahoman, Jl. Way Lubuk
+          </p>
+</div>
+<div class="peer-checked:flex hidden absolute top-3.5 right-3 text-secondary">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</div>
+</label>
+<!-- Outlet 3 -->
+<label class="outlet-card flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all active:scale-[0.99] relative">
+<input class="hidden peer" name="outlet" type="radio" value="Outlet UIN Sukarame (11.00 - 19.00)">
+<div class="peer-checked:bg-secondary peer-checked:text-on-secondary w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-badge text-body-sm mt-0.5 shrink-0 transition-colors">
+          3
+        </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-lg text-on-surface peer-checked:text-secondary">Outlet UIN Sukarame</span>
+<span class="px-2 py-0.5 rounded-md bg-primary-container text-on-surface text-[11px] font-bold">11.00 - 19.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5 truncate">
+<span class="material-symbols-outlined text-sm text-secondary shrink-0">location_on</span>
+            Seberang Geprek Masboy, Jl. Endro Suratmin
+          </p>
+</div>
+<div class="peer-checked:flex hidden absolute top-3.5 right-3 text-secondary">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</div>
+</label>
+<!-- Outlet 4 -->
+<label class="outlet-card flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all active:scale-[0.99] relative">
+<input class="hidden peer" name="outlet" type="radio" value="Outlet Korpri (12.00 - 20.00)">
+<div class="peer-checked:bg-secondary peer-checked:text-on-secondary w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-badge text-body-sm mt-0.5 shrink-0 transition-colors">
+          4
+        </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-lg text-on-surface peer-checked:text-secondary">Outlet Korpri</span>
+<span class="px-2 py-0.5 rounded-md bg-primary-container text-on-surface text-[11px] font-bold">12.00 - 20.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5 truncate">
+<span class="material-symbols-outlined text-sm text-secondary shrink-0">location_on</span>
+            Samping Tiara Parfum, Jl. Ryacudu
+          </p>
+</div>
+<div class="peer-checked:flex hidden absolute top-3.5 right-3 text-secondary">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</div>
+</label>
+<!-- Outlet 5 -->
+<label class="outlet-card flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all active:scale-[0.99] relative">
+<input class="hidden peer" name="outlet" type="radio" value="Outlet Navara (12.00 - 20.00)">
+<div class="peer-checked:bg-secondary peer-checked:text-on-secondary w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-badge text-body-sm mt-0.5 shrink-0 transition-colors">
+          5
+        </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-lg text-on-surface peer-checked:text-secondary">Outlet Navara</span>
+<span class="px-2 py-0.5 rounded-md bg-primary-container text-on-surface text-[11px] font-bold">12.00 - 20.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5 truncate">
+<span class="material-symbols-outlined text-sm text-secondary shrink-0">location_on</span>
+            Navara Foodpark / Navara Citypark
+          </p>
+</div>
+<div class="peer-checked:flex hidden absolute top-3.5 right-3 text-secondary">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</div>
+</label>
+</div>
+<!-- Metode Pengambilan Segmented Control -->
+<div class="pt-2">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold mb-1.5 block">Metode Pemesanan:</span>
+<div class="grid grid-cols-2 gap-2 bg-surface-container p-1 rounded-xl"><label class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg cursor-pointer transition-all text-center"><input class="hidden peer" name="order-method" type="radio" value="Ambil Sendiri (Takeaway)"><div class="peer-checked:bg-surface-container-lowest peer-checked:text-secondary peer-checked:shadow-sm w-full h-full flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-on-surface-variant font-label-button text-body-sm"><span class="material-symbols-outlined text-base">shopping_bag</span> Ambil Sendiri</div></label><label class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg cursor-pointer transition-all text-center"><input checked="" class="hidden peer" name="order-method" type="radio" value="Delivery Kurir / Ojol (Antar ke Alamat)"><div class="peer-checked:bg-surface-container-lowest peer-checked:text-secondary peer-checked:shadow-sm w-full h-full flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-on-surface-variant font-label-button text-body-sm"><span class="material-symbols-outlined text-base">two_wheeler</span> Kirim Kurir / Ojol</div></label></div>
+</div>
+</section>
+<!-- STEP 2: Pilih Varian Menu Box Bar -->
+<section class="flex flex-col space-y-space-sm pt-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-badge text-body-sm">2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Pilih Varian Cheesecake</h2>
+</div>
+<span class="font-label-badge text-body-sm text-tertiary" id="selected-total-box-pill">3 Box Dipilih</span>
+</div>
+<!-- Product Variant Item List -->
+<div class="space-y-2.5" id="product-list-container">
+<!-- 1. Lotus Biscoff -->
+<div class="product-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-lowest shadow-sm" data-name="Lotus Biscoff" data-price="25000">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Close up photography of Cheeseholic signature Lotus Biscoff box bar cheesecake with spiced caramel biscuit crumbs and cream cheese layer, vibrant warm food photography lighting with yellow accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRG3112EulcGHqclsC_J_bZOSIAZiBP2pfPliIi2R9ZOddlVU1j-9BbqEUb46IwRite1_4fgT1Ei_TXwkmhHYKlAD_yqC-Qq3Dwx945b_JDsCrJd-uwHs5CHh4J5Ai11J8YhlXrzyWQSx-nrrMnBkAxjld9IilwrR4xJ94ozO3N6X4bdRKEwkuE4M8UuqSoVoOPBw9IJUqZWykS3tSBdJMzAo-3NfL8yaV4bfV4fdg">
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-body-md text-on-surface truncate">Lotus Biscoff</h3>
+<span class="px-1.5 py-0.2 rounded text-[10px] font-bold bg-[#E32128] text-white">BEST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Spiced biscuit &amp; caramel glaze</p>
+<span class="font-label-price text-body-sm text-secondary">Rp 25.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            -
+          </button>
+<span class="qty-counter font-headline-sm text-body-md text-on-surface w-5 text-center">2</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            +
+          </button>
+</div>
+</div>
+<!-- 2. Dark Choco -->
+<div class="product-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-lowest shadow-sm" data-name="Dark Choco" data-price="25000">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Cheeseholic Dark Choco dessert bar with rich dark chocolate ganache and chocolate chip sprinkles on Japanese cheesecake base, warm studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA60MxUrawJ_GvozwKVWTP-nbMkgRwrghQELdxKBSTqq0xjDgHn08BPBKvxZCugw5bja9ItGGjnyMkt2mN1LmcqeHxvfmMlI3pZYJjWlbLxfzK3yCCNMKvwTqOQv_XUDxSjhw3KQ6h0ZuwKhWvuOvAl90rnSraXwFmPcp6X3W0QhwH4Nvq27XhftaXSfnVMYKjReguo-BXJKfq4s2WOBBEenZtycfCS-cV1Spd3fNze">
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-body-md text-on-surface truncate">Dark Choco</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Rich cocoa ganache &amp; choco chips</p>
+<span class="font-label-price text-body-sm text-secondary">Rp 25.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            -
+          </button>
+<span class="qty-counter font-headline-sm text-body-md text-on-surface w-5 text-center">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            +
+          </button>
+</div>
+</div>
+<!-- 3. Choco Cheese -->
+<div class="product-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-lowest shadow-sm" data-name="Choco Cheese" data-price="25000">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Choco Cheese cheesecake bar half covered with silky chocolate fudge and half topped with freshly shredded cheddar cheese in yellow paper packaging box" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9FsSQ3LGQTktBmGhp8tUVbKFAu2D7odd0BVzUNJ4dsFpzeDOZepGpnotdq1IIdZ3cLPaLFdYNtokuVd7xeH3oEDcmm8VPwfZUVcVNgKJv6XV06RgOayepFBcbj5EI5YsLruBrNUSrHRNxFwELHGkQj2FQ_TPGD-Z7-5A2DJf5s6fLh67yf0YOyhpw5kmXzn84mSne0FRRilCieJ2_xhxEPQMdiVgVxVrfSOoxdHIw">
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-body-md text-on-surface truncate">Choco Cheese</h3>
+<span class="px-1.5 py-0.2 rounded text-[10px] font-bold bg-[#E59819] text-white">DUO</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Perpaduan keju parut &amp; cokelat lezat</p>
+<span class="font-label-price text-body-sm text-secondary">Rp 25.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            -
+          </button>
+<span class="qty-counter font-headline-sm text-body-md text-on-surface w-5 text-center">1</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            +
+          </button>
+</div>
+</div>
+<!-- 4. Choco Crunchy -->
+<div class="product-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-lowest shadow-sm" data-name="Choco Crunchy" data-price="25000">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Cheeseholic Choco Crunchy cheesecake box topped with crispy malt chocolate crunch beads and cocoa drizzle, warm bakery setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf4oTh3d6dx9f-0mrspRVK0nFfGgqIaOna1uUWuqGhU4H-X3Jmha7dfkGjEVgywijysHvU0PeJgjDXf-7s_7vSwlBWNR7zuJeJ7F8On3BKqWNaQiK7gQ1X76Dzklk2IKF0ofSk5OVBkwVKTBBahto--a9zUOwpQ7pMbQTrtTLLNvWWAc26dD55ORXpPfyxEpOrUVCZmHChtkWc0Bm9k-bv_f22GLkaazhFo0IWJUdz">
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-body-md text-on-surface truncate">Choco Crunchy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Malt cokelat renyah berlimpah</p>
+<span class="font-label-price text-body-sm text-secondary">Rp 25.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            -
+          </button>
+<span class="qty-counter font-headline-sm text-body-md text-on-surface w-5 text-center">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            +
+          </button>
+</div>
+</div>
+<!-- 5. Strawberry Cheese -->
+<div class="product-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-lowest shadow-sm" data-name="Strawberry Cheese" data-price="25000">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Strawberry Cheese box cake dessert with real strawberry glaze and snow white grated cheese topping, top angle, vibrant appetizing food shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzxMvQ6YljMlrBGvjdWqDDVjVM3aSYT460_zT56rqxi_lv2AHG8zRiaVX6tsqtxi9zv1QKhSvRPBqCytTMpOP4CZDwVYqSNdRLtBalVoubZpUqto2YGqTHVwqaj8QbNc6Bgx4MvvAP-tpOgp6LPt_EY4QT_uJy3skGEKy6wA5EXxkca0gTOzHiWnBAS8tC_fpq_29QeVkkayGH2WhSbMi95DpA3UrOPeyfm8aSeFRN">
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-body-md text-on-surface truncate">Strawberry Cheese</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Segar buah strawberry &amp; keju melimpah</p>
+<span class="font-label-price text-body-sm text-secondary">Rp 25.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            -
+          </button>
+<span class="qty-counter font-headline-sm text-body-md text-on-surface w-5 text-center">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            +
+          </button>
+</div>
+</div>
+<!-- 6. Strawberry Sweet -->
+<div class="product-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-lowest shadow-sm" data-name="Strawberry Sweet" data-price="25000">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Strawberry Sweet cheese dessert bar covered with glossy red strawberry fruit jelly glaze and white decorative drizzle, clean studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZZmOiI0g9oIFO6gBLfN1v4I11lZhEyBnx_ttrsUaeoNqrRNc-esI47Zi34Rpwmmr_-BCf6BEbHSv1LFSQ0jAipM6WzS0SeQjGF3JFLspZHoAmKu55OJ2UB22LXGP1zdr_g3dFmY6MvXleQQd9bYzYRk0tFggl1v-t_i_yjAIcETpe8_Z2k0pg7tenB6q3U0eFjW--6WAtv2T-OJ5Vnd4Y2Too5iDyDU1yPaeUXPSr">
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-body-md text-on-surface truncate">Strawberry Sweet</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Full selai manis strawberry segar</p>
+<span class="font-label-price text-body-sm text-secondary">Rp 25.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            -
+          </button>
+<span class="qty-counter font-headline-sm text-body-md text-on-surface w-5 text-center">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            +
+          </button>
+</div>
+</div>
+<!-- 7. Cheese Lover -->
+<div class="product-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-lowest shadow-sm" data-name="Cheese Lover" data-price="25000">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Cheese Lover cake bar loaded with generous golden shredded cheddar cheese with chocolate chip accents, appetizing presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeEe0SpNj0KEfoWY00iDTVr8d_N_q04EkyK9CusqjRcMStQQ7MoFJMFU4ccQDXGK7cHqvlt8IL2wRpHQW44P2CrI08gzbEjZt9C3AU8E9kvdyd5ImBEN0edPAhPdxp4gzOQzmGaZ3SyoyIIxgT2Ts1WcJcZZv_RG8DX5xZwLMIRCa2PdtsYomuX5e_4sQOVi8jpPOjMU2mCb6YoE04CLgk3MSnHygajvSGbwIvHESs">
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-body-md text-on-surface truncate">Cheese Lover</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Extra double parutan keju cheddar</p>
+<span class="font-label-price text-body-sm text-secondary">Rp 25.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            -
+          </button>
+<span class="qty-counter font-headline-sm text-body-md text-on-surface w-5 text-center">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            +
+          </button>
+</div>
+</div>
+<!-- 8. Caramel Dulce -->
+<div class="product-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-lowest shadow-sm" data-name="Caramel Dulce" data-price="25000">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Caramel Dulce de leche cheesecake with creamy caramel glaze and crunchy almond praline pearls on top, soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeHgShPuedOkPhIpYhLdeey0AzX64Hwlgig6eA6wpwA928jgkVyNFrdSXKcOWI_bZnV4TzMJ0tVTipTfYHrybPmAAIa5bIQEYbUOdRbpFoqopwDdziPlh8Mt9bl2MnZrKXKwwdzM_xztvsFEsduMnZamTPkI3hD2Brrmc2z8hKTXBPlyxqrAf_1WIRI5QPf-mCLiGR5ORDkaxRa8hRMjYFPhrxCAG4Yq1h3qTFrG2R">
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-body-md text-on-surface truncate">Caramel Dulce</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Toffee dulce de leche aroma karamel</p>
+<span class="font-label-price text-body-sm text-secondary">Rp 25.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            -
+          </button>
+<span class="qty-counter font-headline-sm text-body-md text-on-surface w-5 text-center">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            +
+          </button>
+</div>
+</div>
+<!-- 9. Classic Tiramisu -->
+<div class="product-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-lowest shadow-sm" data-name="Classic Tiramisu" data-price="25000">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Classic Tiramisu Japanese cheesecake dusted heavily with dark cocoa powder and espresso infusion, artisanal dessert aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa1bJKpubtTqOM-Kc3bZDRsGtOuPcPNlbSoOl1omwvJbCEDcvSTLg2r8eOEmZ4-nxNQzriiuNu_LP4ZV8e0m9i1QqU52q6BAOFMSbfdvGK-GncGAcjCvWRGfx3BH3ufzBmPSC-2xu7n4D7Ny2rpeTTC-8icw6qJnPT8eQwxwP0hBpwi25rcaBpBrHuSMCu6gr-1PHFW-aL0MZq884tp26z773BXZHjN5Gydg_0-tUt">
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-body-md text-on-surface truncate">Classic Tiramisu</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Bubuk kakao asli &amp; espresso Lampung</p>
+<span class="font-label-price text-body-sm text-secondary">Rp 25.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            -
+          </button>
+<span class="qty-counter font-headline-sm text-body-md text-on-surface w-5 text-center">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            +
+          </button>
+</div>
+</div>
+<!-- 10. Tiramisu Glaze -->
+<div class="product-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-lowest shadow-sm" data-name="Tiramisu Glaze" data-price="25000">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Tiramisu Glaze cake bar with silky coffee mascarpone glaze and light chocolate dusting, modern dessert photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK613nAOhQSrgfQL9oeW1N0sLbUfsV2CCSsHJ4w9x6TCK8OVAF-p-Nz0dT0teYNdl18t5z4tBnrXPCYJ7JGmvhEE-dwWZf2gEn7K59oO4zQsNpDdOavHLags-HMi33MkjuIYb6jbi31hEMB-GYQP4Og8fvWhO98ZMSDozR5tAoZjlDKerTFWkyJgcoyuk4X73CNvre_ems_gu9NJmVvvTbW2p30pXHH32QrFuOpuGg">
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-body-md text-on-surface truncate">Tiramisu Glaze</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Glaze creamy lembut aroma kopi</p>
+<span class="font-label-price text-body-sm text-secondary">Rp 25.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            -
+          </button>
+<span class="qty-counter font-headline-sm text-body-md text-on-surface w-5 text-center">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            +
+          </button>
+</div>
+</div>
+<!-- 11. Oreo -->
+<div class="product-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-lowest shadow-sm" data-name="Oreo" data-price="25000">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Oreo cheesecake bar topped with crushed dark chocolate cookies and miniature sandwich biscuit, rich cream cheese bottom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAann4HdnpYLEUX5ShPqzfszelq6ab3eD2LEs7axthqJppJcqOieeswYzsg6qgXF0LT4Tcgb2bJLYuP_d7kT-5UAiCHNR3Jj7uxOj5DGthMbj9027Kk5CwUTMKYDr-BbAFUfQTKX9gvlpkl1DaAdnTqZFR_v6gKIFByEhHIDoogGkTviBTsiqmCUmBn8zEcbBMGJqQAMq-fh1DCyq2MLW_f5wrPD3MxiteKKSyz_c5H">
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-body-md text-on-surface truncate">Oreo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Remahan biskuit hitam favorit keluarga</p>
+<span class="font-label-price text-body-sm text-secondary">Rp 25.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            -
+          </button>
+<span class="qty-counter font-headline-sm text-body-md text-on-surface w-5 text-center">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            +
+          </button>
+</div>
+</div>
+<!-- 12. Matcha Greentea -->
+<div class="product-item flex items-center justify-between p-3 rounded-2xl bg-surface-container-lowest shadow-sm" data-name="Matcha Greentea" data-price="25000">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-14 h-14 rounded-xl overflow-hidden shrink-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Japanese Matcha Greentea dessert cake bar with smooth vibrant green tea glaze and white crisp pearls, clean high contrast food styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxZA6tC_Fd51mJb4B3U5YT-DYxJcia8XeXC_rID_rJ_aWMKDVwwCGS0SJQOSyj7jEkkODanSRSnmGJVJmg43V9DT2sc3VipPlHmCFvFh19GPjxRtF5saDUcVAFhPiWRChaR_RM2Ne9gqC4ObiZA1fGDntg2LFGw54USI_rybLQcL8ReBkSICZWparBa9IB1rrqfmfOjjK7QOrR24dh-N90DFNkjXVbTz9InSmQGDxq">
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-body-md text-on-surface truncate">Matcha Greentea</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Bubuk matcha otentik harum khas Jepang</p>
+<span class="font-label-price text-body-sm text-secondary">Rp 25.000</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-container-low px-2 py-1 rounded-full">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            -
+          </button>
+<span class="qty-counter font-headline-sm text-body-md text-on-surface w-5 text-center">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold active:scale-90 transition-transform" type="button">
+            +
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 3: Data Pemesan -->
+<section class="flex flex-col space-y-space-sm pt-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-badge text-body-sm">3</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Data Pengiriman Kurir / Ojol</h2>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm space-y-3"><div><label class="font-body-sm text-body-sm text-on-surface font-semibold block mb-1">Nama Penerima</label><div class="flex items-center bg-surface-container-low rounded-xl px-3 py-2 text-on-surface"><span class="material-symbols-outlined text-secondary text-lg mr-2">person</span><input class="bg-transparent w-full text-body-md outline-none" id="cust-name" placeholder="Contoh: Siti Rahmawati" type="text" value="Siti Rahmawati"></div></div><div><label class="font-body-sm text-body-sm text-on-surface font-semibold block mb-1">Nomor WhatsApp / Telp Penerima</label><div class="flex items-center bg-surface-container-low rounded-xl px-3 py-2 text-on-surface"><span class="material-symbols-outlined text-secondary text-lg mr-2">call</span><input class="bg-transparent w-full text-body-md outline-none" id="cust-phone" placeholder="08xxxxxxxxxx" type="tel" value="0812-3456-7890"></div></div><div class="border border-secondary/40 bg-surface-container-low p-3 rounded-xl space-y-2"><label class="font-body-sm text-body-sm text-secondary font-bold flex items-center justify-between"><span>Alamat Lengkap Pengantaran &amp; Patokan</span><span class="text-[10px] bg-secondary text-on-secondary px-2 py-0.5 rounded-full font-label-badge">Wajib Lengkap</span></label><div class="flex items-start bg-surface-container-lowest rounded-xl px-3 py-2 text-on-surface"><span class="material-symbols-outlined text-secondary text-lg mr-2 mt-0.5">home_pin</span><input class="bg-transparent w-full text-body-md outline-none" id="cust-address" placeholder="Nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan" type="text" value="Jl. Teuku Umar No. 42 (Pagar Hitam), Kedaton, Bandar Lampung"></div><div class="flex items-center bg-surface-container-lowest rounded-xl px-3 py-2 text-on-surface"><span class="material-symbols-outlined text-secondary text-base mr-2">share_location</span><input class="bg-transparent w-full text-body-sm outline-none" id="cust-pinpoint" placeholder="Patokan / Link Google Maps / Shareloc" type="text" value="Samping Apotek Kimia Farma / Shareloc via chat"></div><div class="flex items-center gap-1.5 text-xs text-on-surface-variant font-medium pt-0.5"><span class="material-symbols-outlined text-xs text-secondary">local_shipping</span><span>Ongkir ditagih sesuai tarif GoSend / GrabExpress (ditanggung pemesan).</span></div></div><div class="grid grid-cols-2 gap-2 pt-1"><div><label class="font-body-sm text-body-sm text-on-surface font-semibold block mb-1">Waktu Pengantaran</label><div class="flex items-center bg-surface-container-low rounded-xl px-3 py-2 text-on-surface"><span class="material-symbols-outlined text-secondary text-base mr-1.5">schedule</span><input class="bg-transparent w-full text-body-sm outline-none" id="cust-time" type="text" value="Segera / Hari ini, 15:30 WIB"></div></div><div><label class="font-body-sm text-body-sm text-on-surface font-semibold block mb-1">Catatan Untuk Kurir / Dapur</label><div class="flex items-center bg-surface-container-low rounded-xl px-3 py-2 text-on-surface"><span class="material-symbols-outlined text-secondary text-base mr-1.5">edit_note</span><input class="bg-transparent w-full text-body-sm outline-none" id="cust-notes" placeholder="Catatan pengiriman..." type="text" value="Minta sendok kayu extra &amp; pastikan posisi kue tetap tegak!"></div></div></div></div>
+</section>
+<!-- STEP 4: Live Real-time WhatsApp Message Preview -->
+<!-- STEP 4: Langkah Pembayaran & Bukti Transfer -->
+<section class="flex flex-col space-y-space-sm pt-2" id="payment-step-section">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-badge text-body-sm">4</span>
+      <h2 class="font-headline-sm text-headline-sm text-on-surface">Pembayaran &amp; Bukti Transfer</h2>
+    </div>
+    <span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-[#E7FFDB] text-[#25D366] flex items-center gap-1">
+      <span class="material-symbols-outlined text-xs">verified</span> Bebas Biaya Admin
+    </span>
+  </div>
+
+  <div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm space-y-4">
+    <!-- Payment Method Selector Tabs -->
+    <div>
+      <label class="font-body-sm text-body-sm text-on-surface font-semibold block mb-1.5">Pilih Metode Pembayaran:</label>
+      <div class="grid grid-cols-2 gap-2 bg-surface-container p-1 rounded-xl"><label class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg cursor-pointer transition-all text-center"><input class="hidden peer" name="order-method" type="radio" value="Ambil Sendiri (Takeaway)"><div class="peer-checked:bg-surface-container-lowest peer-checked:text-secondary peer-checked:shadow-sm w-full h-full flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-on-surface-variant font-label-button text-body-sm"><span class="material-symbols-outlined text-base">shopping_bag</span> Ambil Sendiri</div></label><label class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg cursor-pointer transition-all text-center"><input checked="" class="hidden peer" name="order-method" type="radio" value="Delivery Kurir / Ojol (Antar ke Alamat)"><div class="peer-checked:bg-surface-container-lowest peer-checked:text-secondary peer-checked:shadow-sm w-full h-full flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-on-surface-variant font-label-button text-body-sm"><span class="material-symbols-outlined text-base">two_wheeler</span> Kirim Kurir / Ojol</div></label></div>
+    </div>
+
+    <!-- QRIS Card Display -->
+    <div class="rounded-2xl p-3.5 bg-surface-container-low border border-primary-container/40 flex flex-col items-center space-y-3" id="qris-container-box">
+      <div class="flex items-center justify-between w-full">
+        <div class="flex items-center gap-1.5">
+          <span class="px-2 py-0.5 rounded-md bg-[#25D366] text-white text-[10px] font-bold tracking-tight">QRIS NASIONAL</span>
+          <span class="text-[11px] font-body-sm text-on-surface-variant font-medium">GoPay, OVO, Dana, BCA, Mandiri</span>
+        </div>
+        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-primary-container text-on-surface flex items-center gap-1">
+          <span class="material-symbols-outlined text-[12px]">bolt</span> Verifikasi Otomatis
+        </span>
+      </div>
+
+      <!-- QR Canvas Mock -->
+      <div class="p-3 bg-white rounded-xl shadow-sm flex flex-col items-center border border-outline-variant/30 text-center">
+        <div class="w-36 h-36 bg-surface-container-lowest flex items-center justify-center rounded-lg border-2 border-dashed border-on-surface/20 relative p-1">
+          <!-- QR graphic simulation -->
+          <div class="w-full h-full bg-[#111] p-1.5 rounded flex flex-col justify-between">
+            <div class="flex justify-between">
+              <div class="w-8 h-8 border-4 border-white bg-black flex items-center justify-center"><div class="w-3 h-3 bg-white"></div></div>
+              <div class="w-8 h-8 border-4 border-white bg-black flex items-center justify-center"><div class="w-3 h-3 bg-white"></div></div>
+            </div>
+            <div class="flex items-center justify-center">
+              <div class="bg-white px-1 py-0.5 rounded text-[8px] font-bold text-black">CHEESEHOLIC</div>
+            </div>
+            <div class="flex justify-between items-end">
+              <div class="w-8 h-8 border-4 border-white bg-black flex items-center justify-center"><div class="w-3 h-3 bg-white"></div></div>
+              <div class="w-6 h-6 border-2 border-white bg-black flex flex-wrap p-0.5 gap-0.5"><div class="w-1.5 h-1.5 bg-white"></div><div class="w-1.5 h-1.5 bg-white"></div></div>
+            </div>
+          </div>
+        </div>
+        <span class="text-[10px] font-body-sm text-on-surface-variant font-semibold mt-1.5 block">NMID: ID1020039281729 - CHEESEHOLIC BDL</span>
+      </div>
+
+      <div class="w-full flex items-center justify-between pt-1 text-center bg-surface-container-lowest p-2.5 rounded-xl">
+        <div class="text-left">
+          <span class="text-[10px] font-body-sm text-on-surface-variant block">Nominal Sesuai Pesanan:</span>
+          <span class="font-headline-sm text-body-lg text-secondary font-bold" id="payment-qris-amount">Rp 75.000</span>
+        </div>
+        <button type="button" class="flex items-center gap-1 text-xs font-bold text-secondary bg-surface-container px-3 py-1.5 rounded-full active:scale-95 transition-transform">
+          <span class="material-symbols-outlined text-sm">download</span>
+          Unduh QR
+        </button>
+      </div>
+    </div>
+
+    <!-- Transfer Bank Manual List -->
+    <div class="space-y-2" id="bank-transfer-container-box">
+      <span class="font-body-sm text-[11px] text-on-surface-variant font-semibold block">Nomor Rekening Resmi Cheeseholic:</span>
+      
+      <!-- BCA Account -->
+      <div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low border border-outline-variant/30">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="w-10 h-7 rounded bg-[#00529C] text-white flex items-center justify-center font-bold text-[10px] shrink-0">BCA</div>
+          <div class="min-w-0">
+            <div class="font-headline-sm text-body-sm text-on-surface font-bold tracking-wide">023-889-1123</div>
+            <span class="font-body-sm text-[11px] text-on-surface-variant truncate block">a.n CHEESEHOLIC INDONESIA</span>
+          </div>
+        </div>
+        <button type="button" class="flex items-center gap-1 text-xs font-bold text-secondary bg-surface-container-lowest px-2.5 py-1.5 rounded-lg shadow-sm active:scale-95 transition-transform">
+          <span class="material-symbols-outlined text-sm">content_copy</span>
+          <span>Salin</span>
+        </button>
+      </div>
+
+      <!-- Mandiri Account -->
+      <div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low border border-outline-variant/30">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="w-10 h-7 rounded bg-[#003d79] text-white flex items-center justify-center font-bold text-[10px] shrink-0">MANDIRI</div>
+          <div class="min-w-0">
+            <div class="font-headline-sm text-body-sm text-on-surface font-bold tracking-wide">114-00-291823-1</div>
+            <span class="font-body-sm text-[11px] text-on-surface-variant truncate block">a.n CHEESEHOLIC INDONESIA</span>
+          </div>
+        </div>
+        <button type="button" class="flex items-center gap-1 text-xs font-bold text-secondary bg-surface-container-lowest px-2.5 py-1.5 rounded-lg shadow-sm active:scale-95 transition-transform">
+          <span class="material-symbols-outlined text-sm">content_copy</span>
+          <span>Salin</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Interactive Unggah Bukti Transfer / Resi Pembayaran Container -->
+    <div class="pt-1">
+      <label class="font-body-sm text-body-sm text-on-surface font-semibold flex items-center justify-between mb-1.5">
+        <span>Unggah Bukti Transfer / Resi</span>
+        <span class="text-[11px] text-[#25D366] font-bold flex items-center gap-0.5">
+          <span class="material-symbols-outlined text-sm">check_circle</span> Bukti Terlampir
+        </span>
+      </label>
+      
+      <!-- Upload Box with Attached Receipt State -->
+      <div class="border-2 border-dashed border-secondary/40 bg-surface-container-low rounded-2xl p-3 flex items-center justify-between gap-3 cursor-pointer hover:bg-surface-container transition-colors">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary shrink-0 relative overflow-hidden">
+            <span class="material-symbols-outlined text-2xl">receipt_long</span>
+            <div class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-[#25D366] rounded-full flex items-center justify-center text-white text-[9px]">
+              <span class="material-symbols-outlined text-[10px]">done</span>
+            </div>
+          </div>
+          <div class="min-w-0">
+            <div class="font-body-sm text-body-sm font-bold text-on-surface truncate">struk_transfer_bca_75000.jpg</div>
+            <div class="flex items-center gap-2 text-[11px] text-on-surface-variant">
+              <span>1.2 MB</span>
+              <span>•</span>
+              <span class="text-[#25D366] font-semibold">Siap dikirim ke admin</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-1 text-secondary shrink-0">
+          <button type="button" class="p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-secondary">
+            <span class="material-symbols-outlined text-base">photo_camera</span>
+          </button>
+          <button type="button" class="p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-secondary">
+            <span class="material-symbols-outlined text-base">change_circle</span>
+          </button>
+        </div>
+      </div>
+      <p class="font-body-sm text-[11px] text-on-surface-variant mt-1.5 leading-snug flex items-start gap-1">
+        <span class="material-symbols-outlined text-xs text-secondary shrink-0 mt-0.5">info</span>
+        <span>Bukti transfer akan otomatis disertakan atau dikirim bersamaan dengan pesan WhatsApp ke admin (Max 5MB).</span>
+      </p>
+    </div>
+  </div>
+</section><section class="flex flex-col space-y-space-sm pt-2">
+<div class="flex items-center justify-between"><div class="flex items-center gap-2">
+  <span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-badge text-body-sm">5</span>
+  <h2 class="font-headline-sm text-headline-sm text-on-surface">Preview Teks WhatsApp</h2>
+</div>
+<button class="flex items-center gap-1 text-xs font-bold text-secondary bg-surface-container px-2.5 py-1 rounded-full active:scale-95 transition-transform" id="btn-copy-template" type="button">
+  <span class="material-symbols-outlined text-sm">content_copy</span>
+  <span id="copy-btn-text">Salin Teks</span>
+</button></div>
+<!-- Realistic WhatsApp Chat Bubble -->
+<div class="bg-[#ECE5DD] p-3.5 rounded-2xl shadow-sm">
+<div class="flex items-center gap-2 pb-2 text-[11px] font-bold text-[#54656F] uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+        Format Siap Kirim ke CS Cheeseholic (0895-4114-22626)
+      </div>
+<div class="bg-[#E7FFDB] rounded-2xl rounded-tl-sm p-3.5 shadow-sm text-on-surface relative">
+<pre class="font-body-sm text-body-sm whitespace-pre-wrap leading-relaxed select-all" id="wa-preview-text">Halo Cheeseholic Admin! 👋
+Saya mau order Japanese Cheesecake Box via Kurir / Delivery Online:
+
+📋 DETAIL PESANAN:
+- 2x Lotus Biscoff (Rp 50.000)
+- 1x Choco Cheese (Rp 25.000)
+------------------------------
+Total Box: 3 Box
+Total Produk: Rp 75.000
+Ongkir: [Dikonfirmasi Admin / Ditanggung Pemesan]
+
+📍 OUTLET ASAL PENGIRIMAN:
+Outlet Kedaton (Jl. ZA. Pagar Alam)
+
+🛵 METODE: Delivery Kurir / Ojol (Antar ke Alamat)
+👤 NAMA PENERIMA: Siti Rahmawati
+📱 NO TELP / WA: 0812-3456-7890
+🏠 ALAMAT LENGKAP: Jl. Teuku Umar No. 42 (Pagar Hitam), Kedaton, Bandar Lampung
+📍 PATOKAN / PINPOINT: Samping Apotek Kimia Farma / Shareloc via chat
+⏰ WAKTU KIRIM: Segera / Hari ini, 15:30 WIB
+📝 CATATAN: Minta sendok kayu extra &amp; pastikan posisi kue tetap tegak!
+💳 PEMBAYARAN: QRIS Instant (LUNAS - Bukti Terlampir)
+📎 BUKTI TRANSFER: [Terlampir Struk Transfer]
+
+Mohon dicek dan dibantu proses pengiriman kurirnya ya kak. Terima kasih! 🙏🧀</pre>
+<div class="flex justify-end items-center gap-1 mt-1 text-[10px] text-on-surface/50 font-medium">
+<span>Baru saja</span>
+<span class="material-symbols-outlined text-xs text-[#53bdeb]">done_all</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom Summary & CTA -->
+<div class="pt-4">
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-lg flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="bottom-box-count-label">Total Pesanan (3 Box)</span>
+<span class="font-headline-lg text-headline-lg text-secondary leading-none mt-0.5" id="bottom-total-price">Rp 75.000</span>
+</div>
+<div class="text-right">
+<span class="font-label-badge text-body-sm text-on-surface-variant block">Pengiriman Kurir</span>
+<span class="font-body-sm text-body-sm text-secondary font-bold truncate max-w-[130px] block" id="bottom-active-outlet-name">Kedaton (Ojol)</span>
+</div>
+</div>
+<!-- Action Button -->
+<a class="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-full bg-[#25D366] text-white font-label-button text-label-button shadow-md active:scale-95 transition-all" href="https://wa.me/62895411422626?text=Halo%20Cheeseholic%20Admin!%20%F0%9F%91%8B%0ASaya%20mau%20order%20Japanese%20Cheesecake%20Box%3A%0A%0A%F0%9F%93%8B%20DETAIL%20PESANAN%3A%0A-%202x%20Lotus%20Biscoff%20(Rp%2050.000)%0A-%201x%20Choco%20Cheese%20(Rp%2025.000)%0A------------------------------%0ATotal%20Box%3A%203%20Box%0ATotal%20Pembayaran%3A%20Rp%2075.000%0A%0A%F0%9F%93%8D%20OUTLET%20PILIHAN%3A%20Outlet%20Kedaton%20(08.00%20-%2022.00)%0A%F0%9F%9B%B5%20METODE%3A%20Ambil%20Sendiri%20(Takeaway)%0A%F0%9F%91%A4%20NAMA%3A%20Siti%20Rahmawati%0A%F0%9F%93%B1%20NO%20TELP%3A%200812-3456-7890%0A%F0%9F%8F%A0%20ALAMAT%3A%20Jl.%20Teuku%20Umar%20No.%2042%20(Pagar%20Hitam)%2C%20Kedaton%0A%E2%8F%B0%20WAKTU%3A%20Hari%20ini%2C%2015%3A30%20WIB%0A%F0%9F%93%9D%20CATATAN%3A%20Minta%20sendok%20kayu%20extra%20ya%20kak!%0A%0AMohon%20konfirmasi%20ketersediaan%20stok%20dan%20no%20rekening%2FQRIS%20ya%20kak.%20Terima%20kasih!%20%F0%9F%99%8F%F0%9F%A7%80" id="btn-send-whatsapp" target="_blank"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 2C6.516 2 2.03 6.485 2.03 12c0 1.93.55 3.73 1.503 5.257L2 22l4.896-1.504A9.957 9.957 0 0 0 12.031 22C17.547 22 22.03 17.515 22.03 12s-4.483-10-9.999-10zm5.82 14.184c-.244.686-1.22 1.258-1.748 1.336-.48.072-1.096.103-3.23-.78-2.56-1.058-4.2-3.673-4.327-3.843-.127-.17-1.03-1.372-1.03-2.616 0-1.244.654-1.854.887-2.106.233-.252.51-.314.68-.314.17 0 .34.002.488.01.157.009.366-.06.574.437.214.512.73 1.78.793 1.91.063.128.106.279.02.449-.085.17-.128.277-.255.426-.127.15-.266.335-.38.45-.128.127-.26.265-.112.52.148.254.658 1.084 1.411 1.756.97.865 1.787 1.134 2.042 1.261.255.127.404.106.552-.064.15-.17.637-.743.807-1.002.17-.258.34-.212.573-.127.234.085 1.485.7 1.74.827.255.128.425.191.488.3.064.108.064.623-.18 1.309z"></path></svg><span>Kirim Pesan Delivery ke WA</span></a>
+<div class="flex items-center justify-center gap-1.5 text-on-surface-variant font-body-sm text-[11px] text-center">
+<span class="material-symbols-outlined text-xs text-primary">lock</span>
+<span>Format langsung terbuka otomatis di chat admin Cheeseholic</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initCheeseholicOrderGenerator() {
+    const waNumber = '62895411422626';
+
+    const outletInputs = document.querySelectorAll('input[name="outlet"]');
+    const methodInputs = document.querySelectorAll('input[name="order-method"]');
+    const nameInput = document.getElementById('cust-name');
+    const phoneInput = document.getElementById('cust-phone');
+    const addressInput = document.getElementById('cust-address');
+    const timeInput = document.getElementById('cust-time');
+    const notesInput = document.getElementById('cust-notes');
+
+    const previewElement = document.getElementById('wa-preview-text');
+    const copyBtn = document.getElementById('btn-copy-template');
+    const copyText = document.getElementById('copy-btn-text');
+    const waSendBtn = document.getElementById('btn-send-whatsapp');
+
+    const totalBoxPill = document.getElementById('selected-total-box-pill');
+    const bottomBoxCountLabel = document.getElementById('bottom-box-count-label');
+    const bottomTotalPrice = document.getElementById('bottom-total-price');
+    const bottomActiveOutlet = document.getElementById('bottom-active-outlet-name');
+
+    const productItems = document.querySelectorAll('.product-item');
+
+    function formatRupiah(amount) {
+      return 'Rp ' + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    }
+
+    function calculateOrderState() {
+      let totalQty = 0;
+      let totalPrice = 0;
+      const orderLines = [];
+
+      productItems.forEach(item => {
+        const name = item.getAttribute('data-name');
+        const price = parseInt(item.getAttribute('data-price'), 10) || 25000;
+        const qtyEl = item.querySelector('.qty-counter');
+        const qty = parseInt(qtyEl.textContent, 10) || 0;
+
+        if (qty > 0) {
+          totalQty += qty;
+          const subtotal = qty * price;
+          totalPrice += subtotal;
+          orderLines.push(`- ${qty}x ${name} (${formatRupiah(subtotal)})`);
+        }
+      });
+
+      const selectedOutletEl = document.querySelector('input[name="outlet"]:checked');
+      const selectedOutlet = selectedOutletEl ? selectedOutletEl.value : 'Outlet Kedaton';
+      const cleanOutletName = selectedOutlet.split('(')[0].replace('Outlet', '').trim();
+
+      const selectedMethodEl = document.querySelector('input[name="order-method"]:checked');
+      const selectedMethod = selectedMethodEl ? selectedMethodEl.value : 'Ambil Sendiri (Takeaway)';
+
+      const name = nameInput.value.trim() || '-';
+      const phone = phoneInput.value.trim() || '-';
+      const address = addressInput.value.trim() || '-';
+      const time = timeInput.value.trim() || '-';
+      const notes = notesInput.value.trim() || '-';
+
+      // Update UI Counters
+      totalBoxPill.textContent = `${totalQty} Box Dipilih`;
+      bottomBoxCountLabel.textContent = `Total Pesanan (${totalQty} Box)`;
+      bottomTotalPrice.textContent = formatRupiah(totalPrice);
+      bottomActiveOutlet.textContent = cleanOutletName;
+
+      // Construct WhatsApp Message Text
+      let msg = 'Halo Cheeseholic Admin! 👋\nSaya mau order Japanese Cheesecake Box:\n\n';
+      msg += '📋 DETAIL PESANAN:\n';
+      if (orderLines.length === 0) {
+        msg += '(Belum ada varian dipilih - Minimal 1 box)\n';
+      } else {
+        msg += orderLines.join('\n') + '\n';
+      }
+      msg += '------------------------------\n';
+      msg += `Total Box: ${totalQty} Box\n`;
+      msg += `Total Pembayaran: ${formatRupiah(totalPrice)}\n\n`;
+      msg += `📍 OUTLET PILIHAN: ${selectedOutlet}\n`;
+      msg += `🛵 METODE: ${selectedMethod}\n`;
+      msg += `👤 NAMA: ${name}\n`;
+      msg += `📱 NO TELP: ${phone}\n`;
+      msg += `🏠 ALAMAT: ${address}\n`;
+      msg += `⏰ WAKTU: ${time}\n`;
+      msg += `📝 CATATAN: ${notes}\n\n`;
+      msg += 'Mohon konfirmasi ketersediaan stok dan no rekening/QRIS ya kak. Terima kasih! 🙏🧀';
+
+      previewElement.textContent = msg;
+
+      // Update WA Link URL
+      const encodedText = encodeURIComponent(msg);
+      waSendBtn.href = `https://wa.me/${waNumber}?text=${encodedText}`;
+    }
+
+    // Attach Plus/Minus Quantity Listeners
+    productItems.forEach(item => {
+      const minusBtn = item.querySelector('.btn-qty-minus');
+      const plusBtn = item.querySelector('.btn-qty-plus');
+      const qtyEl = item.querySelector('.qty-counter');
+
+      minusBtn.addEventListener('click', () => {
+        let current = parseInt(qtyEl.textContent, 10) || 0;
+        if (current > 0) {
+          qtyEl.textContent = current - 1;
+          calculateOrderState();
+        }
+      });
+
+      plusBtn.addEventListener('click', () => {
+        let current = parseInt(qtyEl.textContent, 10) || 0;
+        qtyEl.textContent = current + 1;
+        calculateOrderState();
+      });
+    });
+
+    // Attach Event Listeners to Inputs
+    outletInputs.forEach(radio => radio.addEventListener('change', calculateOrderState));
+    methodInputs.forEach(radio => radio.addEventListener('change', calculateOrderState));
+    [nameInput, phoneInput, addressInput, timeInput, notesInput].forEach(inp => {
+      inp.addEventListener('input', calculateOrderState);
+    });
+
+    // Copy to Clipboard
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        const textToCopy = previewElement.textContent;
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          copyText.textContent = 'Tersalin!';
+          setTimeout(() => {
+            copyText.textContent = 'Salin Teks';
+          }, 2000);
+        }).catch(() => {
+          copyText.textContent = 'Tersalin';
+        });
+      });
+    }
+
+    // Initial calculation
+    calculateOrderState();
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-tertiary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-space-xs text-on-surface-variant transition-colors" data-path="menu-storefront" href="#"><span class="material-symbols-outlined text-2xl">bakery_dining</span><span class="font-body-sm text-body-sm">Menu</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-space-xs text-on-surface-variant transition-colors" data-path="outlet-cabang" href="#"><span class="material-symbols-outlined text-2xl">storefront</span><span class="font-body-sm text-body-sm">Cabang</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-space-xs text-on-surface-variant transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-2xl">shopping_cart</span><span class="font-body-sm text-body-sm">Cart</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] gap-space-xs transition-colors text-tertiary font-bold" data-path="whatsapp-order-generator" href="#"><span class="material-symbols-outlined text-2xl">send_to_mobile</span><span class="font-body-sm text-body-sm">WA Order</span></a></div></nav>
+
+</body></html>

@@ -1,0 +1,62 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default Deny Catch-All
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // DirectOrder Validator
+    function isValidOrder(data) {
+      return data.id is string && data.id.size() <= 64 &&
+             data.outletId is string && data.outletId.size() <= 64 &&
+             data.customerName is string && data.customerName.size() <= 120 &&
+             data.totalQty is number && data.totalQty >= 0 &&
+             data.totalPrice is number && data.totalPrice >= 0 &&
+             data.status in ['Baru', 'Diproses', 'Siap', 'Selesai', 'Batal'];
+    }
+
+    // Orders Collection: Public customers can place orders; staff can read & update
+    match /orders/{orderId} {
+      allow read: if true;
+      allow create: if isValidId(orderId) && isValidOrder(incoming());
+      allow update: if isValidId(orderId) && isValidOrder(incoming()) &&
+        incoming().diff(existing()).affectedKeys().hasOnly(['status', 'readByOutlet', 'updatedAt']);
+      allow delete: if false;
+    }
+
+    // Inventory Collection: Stock count per outlet
+    match /inventory/{outletId} {
+      allow read: if true;
+      allow create, update: if isValidId(outletId);
+      allow delete: if false;
+    }
+
+    // DispatchLogs Collection: Stock supply transfers from Kitchen to Outlets
+    function isValidDispatch(data) {
+      return data.id is string && data.id.size() <= 64 &&
+             data.quantity is number && data.quantity >= 0 &&
+             data.status in ['Disiapkan', 'Dalam Perjalanan', 'Selesai & Diterima'];
+    }
+
+    match /dispatchLogs/{logId} {
+      allow read: if true;
+      allow create: if isValidId(logId) && isValidDispatch(incoming());
+      allow update: if isValidId(logId) && isValidDispatch(incoming()) &&
+        incoming().diff(existing()).affectedKeys().hasOnly(['status', 'updatedAt']);
+      allow delete: if false;
+    }
+  }
+}
